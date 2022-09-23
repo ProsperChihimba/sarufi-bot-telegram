@@ -1,0 +1,131 @@
+{
+    "greetings": {
+        "message": [
+            "Hello, how can I help you?"
+        ],
+        "next_state": "end"
+    },
+    "goodbye": {
+        "message": [
+            "Goodbye, hope to see you again soon"
+        ],
+        "next_state": "end"
+    },
+    "thanks": {
+        "message": [
+            "You're welcome"
+        ],
+        "next_state": "end"
+    },
+    "confused": {
+        "message": [
+            "I'm sorry, I didn't understand you"
+        ],
+        "next_state": "end"
+    },
+    "purchase_item": {
+        "message": [
+            "Sure, I can help you with that",
+            "Can I have your name ?"
+        ],
+        "next_state": "get_name"
+    },
+    "get_name": {
+        "message": [
+            "Thanks {name}, Please select type of item you want to purchase",
+            "1. MacBook Air M1",
+            "2. MacBook Pro",
+            "3. MacBook Air"
+        ],
+        "next_state": "choice_type"
+    },
+    "choice_type": {
+        "1": "mackbook_air_m1",
+        "2": "mackbook_pro",
+        "3": "mackbook_air"
+    },
+    "mackbook_air_m1": {
+        "message": [
+            "Please send me MacBook Air M1 specification",
+            "For example, Display: 13.3, CPU: 8-core, Memory: 16GB"
+        ],
+        "next_state": "specify_amount"
+    },
+    "mackbook_pro": {
+        "message": [
+            "Please send me MacBook Pro specification",
+            "For example, Display: 13.3, CPU: 8-core, Memory: 16GB"
+        ],
+        "next_state": "specify_amount"
+    },
+    "mackbook_air": {
+        "message": [
+            "Please send me MacBook Air specification",
+            "For example, Display: 13.3, CPU: 8-core, Memory: 16GB"
+        ],
+        "next_state": "specify_amount"
+    },
+    "specify_amount": {
+        "message": [
+            "Please send me the amount you want to pay",
+            "For example, 1000"
+        ],
+        "next_state": "confirm_payment"
+    },
+    "confirm_payment": {
+        "message": [
+            "Please confirm your payment",
+            "1. Yes",
+            "2. No"
+        ],
+        "next_state": "choice_payment_choice"
+    },
+    "choice_payment_choice": {
+        "1": "payment_success",
+        "2": "payment_failure"
+    },
+    "payment_success": {
+        "message": [
+            "Your payment is successful"
+        ],
+        "next_state": "end"
+    },
+    "payment_failure": {
+        "message": [
+            "Your payment is failed"
+        ],
+        "next_state": "end"
+    },
+    "revoke_item": {
+        "message": [
+            "Sure, I can help you with that",
+            "Can I have your order ID ?"
+        ],
+        "next_state": "get_item_number"
+    },
+    "get_item_number": {
+        "message": [
+            "You are about to revoke your item",
+            "Please confirm cancellation",
+            "1. Yes",
+            "2. No"
+        ],
+        "next_state": "choice_item_revoke"
+    },
+    "choice_item_revoke": {
+        "1": "item_revoke_success",
+        "2": "item_revoke_failure"
+    },
+    "item_revoke_success": {
+        "message": [
+            "Your item is revoked successfully"
+        ],
+        "next_state": "end"
+    },
+    "item_revoke_failure": {
+        "message": [
+            "Your item is not revoked"
+        ],
+        "next_state": "end"
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "greetings": [
+        "Hi",
+        "Hello",
+        "Mambo",
+        "Hola",
+        "Salut"
+    ],
+    "goodbye": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "Adios",
+        "Au revoir"
+    ],
+    "thanks": [
+        "You're welcome",
+        "No problem",
+        "My pleasure",
+        "Anytime",
+        "No problem"
+    ],
+    "confused": [
+        "I'm sorry, I don't understand",
+        "I'm not sure I understand",
+        "I'm sorry, can you repeat that?",
+        "I'm sorry, what was that?",
+        "I'm sorry, I didn't understand that"
+    ],
+    "purchase_item": [
+        "I want to purchase item",
+        "I want to buy item",
+        "I want to buy an item",
+        "Need to buy item",
+        "Can I buy item",
+        "Help me buy item",
+        "Buy item",
+        "I would like to buy item"
+    ],
+    "revoke_item": [
+        "I want to revoke item",
+        "I want to cancel item",
+        "I want to cancel my item",
+        "Need to cancel item",
+        "Can I cancel item",
+        "Help me cancel item",
+        "Cancel item",
+        "I would like to cancel item"
+    ]
+}
