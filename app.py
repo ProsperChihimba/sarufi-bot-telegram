@@ -18,7 +18,9 @@ def chat():
 
 def respond(message, chat_id):
     response = sarufi.chat(bot_id=23, chat_id=chat_id, message=message)
-    return response.get("message")
+    if response['message'][0] == "Please send me the amount you want to pay":
+        print("hellllo")
+    return response['message'][0]
 
 
 if __name__ == "__main__":
