@@ -25,17 +25,13 @@
     },
     "purchase_item": {
         "message": [
-            "Sure, I can help you with that",
-            "Can I have your name ?"
+            "Sure, I can help you with that Can I have your name ?"
         ],
         "next_state": "get_name"
     },
     "get_name": {
         "message": [
-            "Thanks {name}, Please select type of item you want to purchase",
-            "1. MacBook Air M1",
-            "2. MacBook Pro",
-            "3. MacBook Air"
+            "Thanks, Please select type of item you want to purchase, 1. MacBook Air M1, 2. MacBook Pro, 3. MacBook Air"
         ],
         "next_state": "choice_type"
     },
@@ -46,69 +42,49 @@
     },
     "mackbook_air_m1": {
         "message": [
-            "Please send me MacBook Air M1 specification",
-            "For example, Display: 13.3, CPU: 8-core, Memory: 16GB"
+            "Please send me MacBook Air M1 specification,  For example, Display: 13.3, CPU: 8-core, Memory: 16GB"
         ],
-        "next_state": "specify_amount"
+        "next_state": "add_number"
     },
     "mackbook_pro": {
         "message": [
-            "Please send me MacBook Pro specification",
-            "For example, Display: 13.3, CPU: 8-core, Memory: 16GB"
+            "Please send me MacBook Pro specification, For example, Display: 13.3, CPU: 8-core, Memory: 16GB"
         ],
-        "next_state": "specify_amount"
+        "next_state": "add_number"
     },
     "mackbook_air": {
         "message": [
-            "Please send me MacBook Air specification",
-            "For example, Display: 13.3, CPU: 8-core, Memory: 16GB"
+            "Please send me MacBook Air specification, For example, Display: 13.3, CPU: 8-core, Memory: 16GB"
         ],
-        "next_state": "specify_amount"
+        "next_state": "add_number"
     },
-    "specify_amount": {
+    "add_number": {
         "message": [
-            "Please send me the amount you want to pay",
-            "For example, 1000"
+            "Please send me your phone number for making payment"
         ],
         "next_state": "confirm_payment"
     },
     "confirm_payment": {
         "message": [
-            "Please confirm your payment",
-            "1. Yes",
-            "2. No"
+            "Thank you, you will soon receive USSD push notification, please enter you password for making payment"
         ],
-        "next_state": "choice_payment_choice"
-    },
-    "choice_payment_choice": {
-        "1": "payment_success",
-        "2": "payment_failure"
+        "next_state": "payment_success"
     },
     "payment_success": {
         "message": [
-            "Your payment is successful"
-        ],
-        "next_state": "end"
-    },
-    "payment_failure": {
-        "message": [
-            "Your payment is failed"
+            "If you have aready made a payment we will soon send you an invoice"
         ],
         "next_state": "end"
     },
     "revoke_item": {
         "message": [
-            "Sure, I can help you with that",
-            "Can I have your order ID ?"
+            "Sure, I can help you with that, Can I have your order ID ?"
         ],
         "next_state": "get_item_number"
     },
     "get_item_number": {
         "message": [
-            "You are about to revoke your item",
-            "Please confirm cancellation",
-            "1. Yes",
-            "2. No"
+            "You are about to revoke your item Please confirm cancellation, 1. Yes, 2. No"
         ],
         "next_state": "choice_item_revoke"
     },

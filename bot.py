@@ -11,7 +11,7 @@ from telegram.ext import (
     CallbackContext,
 )
 
-updater = Updater("5355938535:AAG3It0KJ5sejgIBx5hHGAO9WbpyjErcr9I", use_context=True)
+updater = Updater("5553349289:AAHHQjUh34sA3aN259rxeJi-Yq7f3h42kGQ", use_context=True)
 mybot = updater.dispatcher
 
 # initialize the logger
