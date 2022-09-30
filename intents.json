@@ -28,17 +28,17 @@
         "I'm sorry, I didn't understand that"
     ],
     "purchase_item": [
-        "I want to purchase item",
-        "I want to buy item",
-        "I want to buy an item",
-        "Need to buy item",
+        "Nataka kununua bidhaa",
+        "Nahitaji bidhaa",
+        "Naulizia bidhaa",
+        "Naweza kununua bidhaa?",
         "Can I buy item",
         "Help me buy item",
         "Buy item",
         "I would like to buy item"
     ],
     "revoke_item": [
-        "I want to revoke item",
+        "Nasitisha order",
         "I want to cancel item",
         "I want to cancel my item",
         "Need to cancel item",

@@ -19,7 +19,7 @@ def chat():
 
 def respond(message, chat_id):
     response = sarufi.chat(bot_id=23, chat_id=chat_id, message=message)
-    if response['message'][0] == "Thank you, you will soon receive USSD push notification, please enter you password for making payment":
+    if response['message'][0] == "Asante, sio muda utapokea USSD code ikikutaka kufanya malipo":
         url = "https://api.shoket.co/v1/charge/"
 
         payload = json.dumps({

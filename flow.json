@@ -1,37 +1,37 @@
 {
     "greetings": {
         "message": [
-            "Hello, how can I help you?"
+            "Habari, nawezaje kukusaidia?"
         ],
         "next_state": "end"
     },
     "goodbye": {
         "message": [
-            "Goodbye, hope to see you again soon"
+            "Kwaheri, natazamia kukuona karibuni"
         ],
         "next_state": "end"
     },
     "thanks": {
         "message": [
-            "You're welcome"
+            "Unakaribiswa"
         ],
         "next_state": "end"
     },
     "confused": {
         "message": [
-            "I'm sorry, I didn't understand you"
+            "Samahani, sijakuelewa"
         ],
         "next_state": "end"
     },
     "purchase_item": {
         "message": [
-            "Sure, I can help you with that Can I have your name ?"
+            "Ndio, naweza kukusaidia naweza kupata majina yako?"
         ],
         "next_state": "get_name"
     },
     "get_name": {
         "message": [
-            "Thanks, Please select type of item you want to purchase, 1. MacBook Air M1, 2. MacBook Pro, 3. MacBook Air"
+            "Asante, tafadhari chagua bidhaa unahitaji kununua, \n 1: MacBook air M1, \n 2: MackBook Pro \n 3: MacBook Air"
         ],
         "next_state": "choice_type"
     },
@@ -42,49 +42,49 @@
     },
     "mackbook_air_m1": {
         "message": [
-            "Please send me MacBook Air M1 specification,  For example, Display: 13.3, CPU: 8-core, Memory: 16GB"
+            "Tafadhali nitumie specification za bidhaa Mfano, \n Display: 13.3, \n CPU: 8-core, \n Memory: 16GB"
         ],
         "next_state": "add_number"
     },
     "mackbook_pro": {
         "message": [
-            "Please send me MacBook Pro specification, For example, Display: 13.3, CPU: 8-core, Memory: 16GB"
+            "Tafadhali nitumie specification za bidhaa Mfano, \n Display: 13.3, \n CPU: 8-core, \n Memory: 16GB"
         ],
         "next_state": "add_number"
     },
     "mackbook_air": {
         "message": [
-            "Please send me MacBook Air specification, For example, Display: 13.3, CPU: 8-core, Memory: 16GB"
+            "Tafadhali nitumie specification za bidhaa Mfano, \n Display: 13.3, \n CPU: 8-core, \n Memory: 16GB"
         ],
         "next_state": "add_number"
     },
     "add_number": {
         "message": [
-            "Please send me your phone number for making payment"
+            "Naomba nambari ya simu ambayo itatumika kufanyia malipo, tutatuma USSD code na utalazimika kuandika namba yako ya siri kufanya malipo"
         ],
         "next_state": "confirm_payment"
     },
     "confirm_payment": {
         "message": [
-            "Thank you, you will soon receive USSD push notification, please enter you password for making payment"
+            "Asante, sio muda utapokea USSD code ikikutaka kufanya malipo"
         ],
         "next_state": "payment_success"
     },
     "payment_success": {
         "message": [
-            "If you have aready made a payment we will soon send you an invoice"
+            "Kama umeshafanya malipo sio muda utapokea ujumbe kuhusu bidhaa yako, asante"
         ],
         "next_state": "end"
     },
     "revoke_item": {
         "message": [
-            "Sure, I can help you with that, Can I have your order ID ?"
+            "Ndio naweza kukusaidia, tafadhali naomba namba ya order?"
         ],
         "next_state": "get_item_number"
     },
     "get_item_number": {
         "message": [
-            "You are about to revoke your item Please confirm cancellation, 1. Yes, 2. No"
+            "Unakaribia kusitisha order yako tafadhari thibitisha, \n 1. Ndio, \n 2. Hapana"
         ],
         "next_state": "choice_item_revoke"
     },
@@ -94,13 +94,13 @@
     },
     "item_revoke_success": {
         "message": [
-            "Your item is revoked successfully"
+            "Order imesitishwa kikamilifu"
         ],
         "next_state": "end"
     },
     "item_revoke_failure": {
         "message": [
-            "Your item is not revoked"
+            "Order haikusitishwa"
         ],
         "next_state": "end"
     }

@@ -38,7 +38,7 @@ def start(update: Update, context: CallbackContext):
     reply_with_typing(
         update,
         context,
-        f"Hi {first_name}!\nI'm a bot that can help you with insurance.",
+        f"Hi {first_name}!\n Mimi no Robot naweza kukusaidia kununua bidhaa kwa urahisi.",
     )
 
 
